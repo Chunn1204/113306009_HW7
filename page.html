@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="page.css">
+	<title>My Personal Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+ 	<div class="main-container">
+    	<div class="left-panel">
+      		<div class="photo-panel" style="background-image: url('jean.jpg');"></div>
+	      <div class="text-content">
+	      	<div class="name">
+	      		<h1 id="nameDisplay">JEAN</h1>
+	      		<button id="editButton" onclick="toggleEdit()">edit</button>
+  <button id="saveButton" onclick="saveName()" style="display:none;">save</button>
+	      	</div>
+	        <section class="about-me">
+	          <h2>ABOUT ME</h2>
+	          <p>I am a freshman in the Department of Management Information Systems at National Chengchi University. I am very interested in studying programming and computer science fundamentals. I have experence in writing Java, HTML, CSS, JavaScript, and Python.</p>
+	        </section>
+	        <section class="contact-info">
+	          <h2>CONTACT</h2>
+	          <p>Email: <a href="mailto:113306009@g.nccu.edu.tw">113306009@g.nccu.edu.tw</a></p>
+	        </section>
+	        <div class="nccu-icon">
+	          <img src="nccu.jpg" alt="NCCU Icon">
+	        </div>
+	      </div>
+	    </div>
+
+	    <div class="right-panel">
+	      <section class="education">
+	        <h2>Education</h2>
+	        <div class="timeline">
+	          <div class="entry">
+	            <span class="year">2023-<br>now</span>
+	            <span class="description">National Chengchi University, Department of MIS Computer Science</span>
+	          </div>
+	          <div class="entry">
+	            <span class="year">2021-<br>2023</span>
+	            <span class="description">Touyuan PingZhen High School<br>Participated in computer science club</span>
+	          </div>
+	          <div class="entry">
+	            <span class="year">2018-<br>2021</span>
+	            <span class="description">Middle School Graduation<br>Started developing an interest in computer science</span>
+	          </div>
+	        </div>
+	      </section>
+
+	      <!-- Homework List Section -->
+	      <section class="homework-list">
+	        <h2>Homework List</h2>
+	        <ul>
+	          <li><span class="HW">HW1 -</span><a href="https://github.com/Chunn1204/HW1.git">https://github.com/Chunn1204/HW1.git</a></li>
+	          <li><span class="HW">HW2 -</span><a href="https://github.com/Chunn1204/HW2.git">https://github.com/Chunn1204/HW2.git</a></li>
+	          <li><span class="HW">HW3 -</span><a href="https://github.com/Chunn1204/HW3-.git">https://github.com/Chunn1204/HW3-.git</a></li>
+	        </ul>
+	      </section>
+
+	      <!-- Favorite Music Section -->
+	      <section class="favorite-music">
+	        <h2>Favorite Music</h2>
+	        <div class="music-gallery" id="musicGallery">
+	          <a href="https://youtu.be/YudHcBIxlYw?si=gWkt160gRQbcIHL0" target="_blank" class="music-item">
+	          <img src="YouTube_Logo.jpg" alt="Song 1">
+	          <p>FLOWER</p></a>
+	          <a href="https://youtu.be/bB3-CUMERIU?si=as04digqa7Bd4e5s" target="_blank" class="music-item">
+	          <img src="YouTube_Logo.jpg" alt="Song 2">
+	          <p>MANTRA</p></a>
+	          <a href="https://youtu.be/ekr2nIex040?si=K5KbO3wtjqwCXqTW" target="_blank" class="music-item">
+	          <img src="YouTube_Logo.jpg" alt="Song 3">
+	          <p>APT</p></a>
+	          <a href="https://youtu.be/hbcGx4MGUMg?si=EHc9Nx-L3u_bY3bO" target="_blank" class="music-item">
+	          <img src="YouTube_Logo.jpg" alt="Song 4">
+	          <p>ROCKSTAR</p></a>
+	        </div>
+	        <button id="addMusicButton">Add</button>
+  
+  <div id="musicForm" class="music-form">
+    <input type="text" id="musicLink" placeholder="Enter music link">
+    <input type="text" id="musicName" placeholder="Enter music name">
+    <button id="submitMusicButton">Submit</button>
+    <button id="cancelMusicButton">Cancel</button>
+  </div>
+	      </section>
+
+	      <section class="note">
+	        <p>LOVE AND PEACE</p>
+	      </section>
+	    </div>
+	</div>
+	<script src="page.js"></script>
+</body>
+</html>
